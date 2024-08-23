@@ -1,0 +1,173 @@
+/* Reset and Base Styles */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Soft background for contrast */
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Booking Form Wrapper */
+  .booking-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* Booking Form Styles */
+  .booking-form {
+    background-color: #fff;
+    color: #333;
+    padding: 3rem;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .booking-form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .booking-form h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #0056b3;
+  }
+  
+  .booking-form .form-group {
+    margin-bottom: 2rem;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    color: #555;
+  }
+  
+  .booking-form input[type="text"],
+  .booking-form input[type="tel"],
+  .booking-form input[type="number"],
+  .booking-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .booking-form input[type="text"]:focus,
+  .booking-form input[type="tel"]:focus,
+  .booking-form input[type="number"]:focus,
+  .booking-form select:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+    outline: none;
+  }
+  
+  .booking-form input[type="radio"] {
+    margin-right: 1rem;
+  }
+  
+  .booking-form .radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .booking-form .radio-group label {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .booking-form button {
+    flex: 1;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .booking-form .submit-btn {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  
+  .booking-form .submit-btn:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+  }
+  
+  .booking-form .cancel-btn {
+    background-color: #d9534f;
+    color: #ffffff;
+  }
+  
+  .booking-form .cancel-btn:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .booking-form-wrapper {
+      padding: 1.5rem;
+    }
+  
+    .booking-form {
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  
+    .booking-form h2 {
+      font-size: 2.4rem;
+    }
+  
+    .booking-form input[type="text"],
+    .booking-form input[type="tel"],
+    .booking-form input[type="number"],
+    .booking-form select {
+      font-size: 1.4rem;
+    }
+  
+    .booking-form .radio-group label {
+      margin-right: 1rem;
+      font-size: 1.2rem;
+    }
+  
+    .booking-form button {
+      font-size: 1.4rem;
+    }
+  }
+  
